@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: myfont;
-    src: url("mymedia/myfont.ttf");
+    src: url("myfont.ttf");
 }
 
 @keyframes writing {
@@ -56,7 +56,7 @@ body{
     border-top-left-radius: 70%;
     /*transform: rotate(10deg);*/
     margin: 5vw;
-    background-image: url(mymedia/me.png);
+    background-image: url(me.png);
     /*background-size: 20vw 20vw; // cover;*/
     background-size: 100%;
     background-position: right;
@@ -173,7 +173,7 @@ header a:hover {
     margin:25vw auto 15vw;
     padding-bottom: 10vw;
     line-height: 3vw;
-    background-image: url(mymedia/computer.gif);
+    background-image: url(computer.gif);
     filter: grayscale(100%);
     background-position: left bottom ;
     background-size: 20vw ;
