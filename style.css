@@ -326,6 +326,9 @@ header a:hover {
     font-size:10vw;
     padding:40vw auto;
   }
+    pre{
+        font-size:1px;
+        }
   #contact{
     font-size:10vw;
     width:60%;
