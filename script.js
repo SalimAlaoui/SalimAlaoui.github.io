@@ -120,6 +120,13 @@ document.body.onload = () => {
     var text2label = document.getElementById("text2");
     var x=0;
     var speedwrite = 200;
+    if (window.innerWidth < 768)
+    {
+      text1label.style.display = "contents";
+      text2label.style.display = "contents";
+      text1label.style.lineHeight = "12vw"; 
+      text2label.style.lineHeight = "12vw"; 
+    }
 
     setTimeout(()=>{
       for(i=0;i<text1.length;i++)
@@ -138,11 +145,14 @@ document.body.onload = () => {
       for(i=0;i<text2.length;i++)
       {
           setTimeout(()=>{
-              if(text1.substring(y,y+1) == "P" && window.innerWidth < 768)
-                text1label.innerHTML += '<br style="display:block;">'
+              if( (text2.substring(y,y+1) == "S" || text2.substring(y,y+1) == "E")  && window.innerWidth < 768)
+                text2label.innerHTML += '<br style="display:block;">'
               text2label.innerHTML += text2.substring(y,++y);
           },(speedwrite*text1.length)+speedwrite*(i+1));
       }
+      setTimeout(()=>{
+        text2label.style.display="inline-block";  
+      }, speedwrite*text1.length+speedwrite*text2.length);  
     },2000);
 
     var topwin = window.scrollY;
@@ -225,11 +235,6 @@ document.body.onload = () => {
           cursflw.style.left = (canvas_x+((last_move[0]-canvas_x)/100)).toString()+"px";
         },3);
         
-        
-      // if( ( ( event.clientX <= PCoords.right + 50 ) && ( event.clientX >= PCoords.left - 50 ) )   &&  ( ( event.pageY <= PCoords.bottom + 50 ) && ( event.pageY >= PCoords.top - 50 ) ) ) 
-      // {
-        // console.log(Pheader.height,event.clientY);
-      // }
       if( ( ( event.clientX <= Pheader.right ) && ( event.clientX >= Pheader.left ) )   &&  ( ( event.clientY <= Pheader.height ) && ( event.clientY >= 0 ) ) ) 
         {
           header.style.position = "sticky";
@@ -239,23 +244,3 @@ document.body.onload = () => {
     };
 }
 console.log("Hey friend , You have nothing to do right here!!! ( Salim Alaoui )")
-
-// if(cursflw.style.top.endsWith('px'))
-//   {
-//     let canvas_y = cursflw.style.top
-//     canvas_y = parseInt(canvas_y.substring(0,canvas_y.length-2));
-//     let canvas_x = cursflw.style.left
-//     canvas_x = parseInt(canvas_y.substring(0,canvas_y.length-2));
-//   }
-//   else
-//   {
-//     canvas_y = 0;
-//     canvas_x = 0;
-//   }
-//   if(canvas_y==last_move[1] && last_move[0]==canvas_x)
-//   {
-//     clearInterval(fllwint);
-//     return;
-//   }
-//   cursflw.style.top = (canvas_y+((last_move[1]-canvas_y)/100)).toString()+"px";
-//   cursflw.style.left = (canvas_x+((last_move[0]-canvas_x)/100)).toString()+"px";
