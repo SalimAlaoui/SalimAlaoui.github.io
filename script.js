@@ -160,7 +160,7 @@ document.body.onload = () => {
 
         }
         // else if(newtop < 80 || newtop < topwin-10)
-        else if(newtop <= 150 )
+        else if(newtop <= 150 || newtop < header.getBoundingClientRect().top+topwin )
         {
             header.style.position = "sticky";
             header.style.top = "0";
