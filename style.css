@@ -167,7 +167,7 @@ header a:hover {
 
 #about{
     font-size: 1vw;
-    text-align: center;
+    text-align: right;
     width: 60%;
     padding-top: 5vw;
     margin:25vw auto 15vw;
@@ -324,8 +324,9 @@ pre{
     display: block;
   }
   #about{
-    font-size: 5vw;
+    font-size: 4vw;
     line-height: 8vw;
+    text-align: left;
     width:80%;
     margin:140vw auto 30vw;
     background-position: bottom;
