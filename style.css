@@ -167,7 +167,7 @@ header a:hover {
 
 #about{
     font-size: 1vw;
-    text-align: right;
+    text-align: left;
     width: 60%;
     padding-top: 5vw;
     margin:25vw auto 15vw;
@@ -175,7 +175,7 @@ header a:hover {
     line-height: 3vw;
     background-image: url(computer.gif);
     filter: grayscale(100%);
-    background-position: left bottom ;
+    background-position: right bottom ;
     background-size: 20vw ;
     background-repeat: no-repeat;
     font-family: "Share Tech Mono", monospace;
@@ -326,7 +326,6 @@ pre{
   #about{
     font-size: 4vw;
     line-height: 8vw;
-    text-align: left;
     width:80%;
     margin:140vw auto 30vw;
     background-position: bottom;
