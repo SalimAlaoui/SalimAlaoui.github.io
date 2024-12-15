@@ -382,6 +382,7 @@ footer{
 }
 
 .rights{
+  display:none;
   text-align: center;
   color: #555;
   background-image: linear-gradient(to right,#b0afae 5%,#dedcd9 95%);
