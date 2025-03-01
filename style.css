@@ -84,6 +84,14 @@ body{
   animation-iteration-count: infinite;
 }
 
+#axelor{
+            color : #32325d;
+}
+#axelor span{
+    color : #3ecf8e;
+}
+
+
 .more > span{
   font-size: 36px;
   filter: grayscale(0%);
