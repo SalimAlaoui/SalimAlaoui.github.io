@@ -84,9 +84,10 @@ body{
   animation-iteration-count: infinite;
 }
 
-/* #axelor {
-     color: "#32325d";
-} */
+#axelor {
+/*      color: "#32325d"; */
+    text-align: center;
+} 
 
 #axelor span{
     color: #3ecf8e;
